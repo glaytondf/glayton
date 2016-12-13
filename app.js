@@ -10,6 +10,7 @@ var perfil = require('./routes/perfil');
 var aluno = require('./routes/aluno');
 var carro = require('./routes/carro');
 var eleitor = require('./routes/eleitor');
+var localVotacao = require('./routes/local.votacao');
 
 var mongoose = require('mongoose');
 
@@ -60,6 +61,7 @@ app.use('/perfil', perfil);
 app.use('/aluno', aluno);
 app.use('/carro', carro);
 app.use('/eleitor', eleitor);
+app.use('/local-votacao', localVotacao);
 
 
 
